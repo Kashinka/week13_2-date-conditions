@@ -19,4 +19,11 @@ if (a === 10) {
 
 if (age >= 18) {
     console.log('Добро пожаловать на выборы');
-}
+};
+
+// Напишите условие: если длина элемента question больше 40, то установите для элемента advice шрифт в 33px (advice.style.fontSize = ...) , и установите для элемента advice шрифт 42px, если условие не выполняется. То есть если длина первого элемента не больше 40.
+if (question.length > 40) {
+  advice.style.fontSize = '33px';
+} else {
+  advice.style.fontSize = '42px';
+};
