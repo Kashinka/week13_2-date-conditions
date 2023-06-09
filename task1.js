@@ -60,3 +60,44 @@ let result
  console.log('Число меньше или равно 10');
 
  console.log(result)
+
+ // В примере с покупкой автомобиля мы использовали условные конструкции, перепишите пример используя логические операторы. Исходный код:
+
+function checkCar (distance, owner, jacked, cost) {
+	if (distance <= 10000) { 
+		if (owner === 1) { 
+			if (jacked === false) { 
+				if (cost <= 5000000) { 
+					return true; 
+				} else return false;
+			} else return false;
+		}
+		else if (ownersNumber === 2) { 
+			if (jacked === false) { 
+				if (cost <= 500000) { 
+					return true;
+				} else return false;
+			} else return false
+		} else return false;
+	} else return false;
+}
+
+function checkCar (distance, owner, jacked, cost) {
+	if (distance <= 10000) && (owner === 1) && (jacked === false) && (cost <= 5000000) { 
+					return true; 
+				} else return false;
+			} else return false;
+		}
+		else if (ownersNumber === 2) { 
+			if (jacked === false) && (cost <= 500000) { 
+					return true;
+				} else return false;
+			} else return false
+		} else return false;
+	} else return false;
+}
+
+function checkCar (distance, owner, jacked, price)  {
+	const condition = distance <= 10000 && (owner === 1 || owner === 2) && !jacked && price <= 1000000;
+	return condition;
+}
