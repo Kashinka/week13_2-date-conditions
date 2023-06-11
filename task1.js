@@ -82,22 +82,7 @@ function checkCar (distance, owner, jacked, cost) {
 	} else return false;
 }
 
-function checkCar (distance, owner, jacked, cost) {
-	if (distance <= 10000) && (owner === 1) && (jacked === false) && (cost <= 5000000) { 
-					return true; 
-				} else return false;
-			} else return false;
-		}
-		else if (ownersNumber === 2) { 
-			if (jacked === false) && (cost <= 500000) { 
-					return true;
-				} else return false;
-			} else return false
-		} else return false;
-	} else return false;
-}
-
-function checkCar (distance, owner, jacked, price)  {
-	const condition = distance <= 10000 && (owner === 1 || owner === 2) && !jacked && price <= 1000000;
+function checkCar (distance, owner, jacked, cost)  {
+	const condition = (distance <= 10000 && owner === 1 && !jacked && cost <= 5000000) || (owner === 2 && !jacked && cost <= 500000);
 	return condition;
-}
+};
