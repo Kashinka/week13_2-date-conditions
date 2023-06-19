@@ -12,20 +12,18 @@ const fio2 = fio.value;
 
 const showName = document.getElementById('showName');
 
-if(showName==true) {
+if(showName.checked) {
 
     const fioNoSpace = fio2.replace(/\s+/g, '');
 
-const stringFio = fioNoSpace[0].toUpperCase() + fioNoSpace.slice(1).toLowerCase();
+    const stringFio = fioNoSpace[0].toUpperCase() + fioNoSpace.slice(1).toLowerCase();
 
-return stringFio;
-}
-
+    return stringFio;
 } else {
 
     return "username";
-
-};
+}
+}
 
 const ava = document.getElementById('ava');
 
