@@ -45,4 +45,8 @@ button.onclick = function displayComment() {
 
     result3.innerHTML = checkSpam(comment);
 
+    let now = new Date();
+
+    result4.innerHTML = now;
+
 };
