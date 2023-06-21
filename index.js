@@ -1,19 +1,26 @@
 const button = document.getElementById('button');
-
-const result = document.getElementById('result');
-
 const form = document.getElementById('form');
-
 const fio = document.getElementById('fio');
-
-function resultFio() {
-
-const fio2 = fio.value;
-
 const showName = document.getElementById('showName');
 
-if(showName.checked) {
+const ava = document.getElementById('ava');
+const result = document.getElementById('result');
+const result2 = document.getElementById('result2');
+const result3 = document.getElementById('result3');
 
+const comment = document.getElementById('comment');
+
+showName.addEventListener("input", function () {
+    if (showName.checked) {
+    fio.style.display = "block";
+    } else {
+    fio.style.display = "none";
+    }
+});
+
+function resultFio() {
+const fio2 = fio.value;
+if(showName.checked && fio.value !== "") {
     const fioNoSpace = fio2.replace(/\s+/g, '');
 
     const stringFio = fioNoSpace[0].toUpperCase() + fioNoSpace.slice(1).toLowerCase();
@@ -24,14 +31,6 @@ if(showName.checked) {
     return "username";
 }
 }
-
-const ava = document.getElementById('ava');
-
-const result2 = document.getElementById('result2');
-
-const result3 = document.getElementById('result3');
-
-const comment = document.getElementById('comment');
 
 function checkSpam(comment) {
 
