@@ -10,14 +10,6 @@ const result3 = document.getElementById('result3');
 
 const comment = document.getElementById('comment');
 
-showName.addEventListener("input", function () {
-    if (showName.checked) {
-    fio.style.display = "block";
-    } else {
-    fio.style.display = "none";
-    }
-});
-
 function resultFio() {
 const fio2 = fio.value;
 if(showName.checked && fio.value !== "") {
