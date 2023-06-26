@@ -9,6 +9,7 @@ const result2 = document.getElementById('result2');
 const result3 = document.getElementById('result3');
 
 const comment = document.getElementById('comment');
+// получаем элементы по id 
 
 function resultFio() {
 const fio2 = fio.value;
@@ -22,7 +23,7 @@ if(showName.checked && fio.value !== "") {
 
     return "username";
 }
-}
+} // обрабатываем имя пользователя (меняем регистры, убираем пробелы), выводим вместо имени "username", если не хочет показывать имя
 
 function checkSpam(comment) {
 
@@ -30,7 +31,7 @@ function checkSpam(comment) {
 
     return checkViagra;
 
-};
+}; // проверяем комментарий на спам
 
 
 button.onclick = function displayComment() {
@@ -65,4 +66,4 @@ if ((randomNumber === 1) && (ava.value == "")) {
 
     result4.innerHTML = now;
 
-};
+}; // по клике на кнопку выводим комментарий с аватаром и датой
