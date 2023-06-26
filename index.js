@@ -32,7 +32,13 @@ function checkSpam(comment) {
 
 };
 
-const randomNumber = Math.ceil(Math.random()*5);
+
+button.onclick = function displayComment() {
+
+    result.innerHTML = resultFio();
+
+    const randomNumber = Math.ceil(Math.random()*5);
+console.log(randomNumber);
 
 if (randomNumber === 1) {
     result2.innerHTML = `<img src = ${"./img/1.jpg"} width = 100 px height = 150 px>`;
@@ -51,15 +57,7 @@ if (randomNumber === 1) {
     const link = ava.value;
     result2.innerHTML = `<img src = ${link} width = 100 px height = 150 px>`;
 
-  }
-
-button.onclick = function displayComment() {
-
-    result.innerHTML = resultFio();
-
-    const link = ava.value;
-
-    result2.innerHTML = `<img src = ${link} width = 100 px height = 150 px>`;
+  } // выбираем случайную аватарку, если пользователь не ввёл ссылку
 
     result3.innerHTML = checkSpam(comment);
 
