@@ -32,6 +32,26 @@ function checkSpam(comment) {
 
 };
 
+const randomNumber = Math.ceil(Math.random()*5);
+
+if (randomNumber === 1) {
+    result2.innerHTML = `<img src = ${"./img/1.jpg"} width = 100 px height = 150 px>`;
+  } else if (randomNumber === 2) {
+    result2.innerHTML = `<img src = ${"./img/2.jpg"} width = 100 px height = 150 px>`;
+  } else if (randomNumber === 3) {
+    result2.innerHTML = `<img src = ${"./img/3.jpg"} width = 100 px height = 150 px>`;
+  } else if (randomNumber === 4) {
+    result2.innerHTML = `<img src = ${"./img/4.jpg"} width = 100 px height = 150 px>`;
+  } else if (randomNumber === 5) {
+    result2.innerHTML = `<img src = ${"./img/5.jpg"} width = 100 px height = 150 px>`;
+  } else if (randomNumber === 6) {
+    result2.innerHTML = `<img src = ${"./img/6.jpg"} width = 100 px height = 150 px>`;
+  } else {
+
+    const link = ava.value;
+    result2.innerHTML = `<img src = ${link} width = 100 px height = 150 px>`;
+
+  }
 
 button.onclick = function displayComment() {
 
